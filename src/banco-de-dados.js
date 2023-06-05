@@ -7,6 +7,10 @@ const pitty = {
             {
                 faixa: 1,
                 nome: "Teto de Vidro"
+            },
+            {
+                faixa: 2,
+                nome: "Admirável Chip novo"
             }
         ]
     },
@@ -20,7 +24,8 @@ const pitty = {
                 nome: "A Saideira"
             }
         ]
-    }],
+    },
+    ],
 
 };
 
