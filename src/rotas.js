@@ -1,5 +1,11 @@
 const express = require('express');
-const { listarAlbuns, obterAlbum } = require('./controladores/funcoes');
+const {
+    listarAlbuns,
+    obterAlbum,
+    cadastrarAlbum,
+    atualizarAlbum,
+    atualizarAno
+} = require('./controladores/funcoes');
 
 const rotas = express();
 
@@ -8,6 +14,10 @@ rotas.get('/', (req, res) => {
 });
 
 rotas.get('/discografia', listarAlbuns);
-rotas.get('/discografia/:id', obterAlbum)
+rotas.get('/discografia/:id', obterAlbum);
+rotas.post('/discografia', cadastrarAlbum);
+rotas.put('/discografia/:id', atualizarAlbum);
+rotas.patch('/discografia/:id/ano', atualizarAno);
+rotas.delete('/discografia/:id', excluirALbum)
 
 module.exports = rotas;
