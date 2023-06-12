@@ -104,5 +104,6 @@ module.exports = {
     obterAlbum,
     cadastrarAlbum,
     atualizarAlbum,
-    atualizarAno
+    atualizarAno,
+    excluirALbum
 }

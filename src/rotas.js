@@ -4,7 +4,8 @@ const {
     obterAlbum,
     cadastrarAlbum,
     atualizarAlbum,
-    atualizarAno
+    atualizarAno,
+    excluirALbum
 } = require('./controladores/funcoes');
 
 const rotas = express();
